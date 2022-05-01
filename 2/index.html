@@ -8,17 +8,29 @@
   <body>
     
     <section id="container">
-        <div id=00 class="row1 row"></div>
-        <div id=01 class="row1 row"></div>
-        <div id=02 class="row1 row"></div>
+        <div id=00 class="row"></div>
+        <div id=01 class="row"></div>
+        <div id=02 class="row"></div>
 
-        <div id=10 class="row2 row"></div>
-        <div id=11 class="row2 row"></div>
-        <div id=12 class="row2 row"></div>
+        <div id=10 class="row"></div>
+        <div id=11 class="row"></div>
+        <div id=12 class="row"></div>
 
-        <div id=20 class="row3 row"></div>
-        <div id=21 class="row3 row"></div>
-        <div id=22 class="row3 row"></div>
+        <div id=20 class="row"></div>
+        <div id=21 class="row"></div>
+        <div id=22 class="row"></div>
+
+        <div id=control class="control">
+            <button class="btn reset" id="reset">Reset</button>
+            <span id="score">Score 
+              <span class="x">X: <em id="xscore">0</em></span> 
+              <span class="o">O: <em id="oscore">0</em></span>
+            </span>
+
+            <span>Your move:              
+              <span id="current">X</span>
+            </span>
+        </div>
     </section>
 
     <script src="script.js"></script>

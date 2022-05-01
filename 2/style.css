@@ -26,14 +26,69 @@ body {
     height: 100px;
     background-color: azure;
     align-content: center;
-    padding: auto;   
+    text-align: center;
+  }
+
+  .control {
+    padding: 10px 0;
+    width: 330px;
+    height: 50px;
+    background-color: azure;
+    align-content: center;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.6em;
+    color: #18222d;
+  }
+
+  .btn{
+    background: none;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 6px 12px;
+		text-decoration: none;   
+  }
+  .reset{
+    border-color: #17a2b8;
+		color: #17a2b8;
+		transition: background 0.3s linear 0s;
+  }
+
+  .reset:hover{
+    background: #17a2b8;
+    border-color: #17a2b8;
+    color: #ffffff;
   }
 
   .x {
     color: darkred;
+    font-weight: bold;
   }
 
   .o {
     font-weight: bold;
     color: black;
   }
+
+  #current {
+    font-weight: bold;
+  }
+
+  .winner {
+    background-color: #ffe196;
+    animation-name: win;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes win {
+    from {
+      background-color: azure;
+    }
+    to{
+      background-color: #ffe196;
+    }
+  }
+
